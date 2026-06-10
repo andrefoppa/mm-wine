@@ -66,7 +66,7 @@ export default function SommelierSection() {
           <div className="space-y-6">
             <div className="aspect-video overflow-hidden" style={{ backgroundColor: "#f5ede0" }}>
               <img
-                src="https://images.unsplash.com/photo-1516594798947-e65505dbb29d?w=700&q=90"
+                src="https://images.unsplash.com/photo-1569919659476-f0852f6834b7?w=700&q=90"
                 alt="Adega com garrafas selecionadas"
                 className="w-full h-full object-cover"
               />

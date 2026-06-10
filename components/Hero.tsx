@@ -71,7 +71,7 @@ export default function Hero() {
             <div className="relative w-full max-w-sm">
               <div className="aspect-[3/4] overflow-hidden" style={{ backgroundColor: "#ede3d4" }}>
                 <img
-                  src="https://images.unsplash.com/photo-1569919659476-f0852f6834b7?w=700&q=90"
+                  src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=700&q=90"
                   alt="Taça de cristal MM Wine"
                   className="w-full h-full object-cover"
                 />
