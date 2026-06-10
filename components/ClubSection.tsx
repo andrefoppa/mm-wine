@@ -1,38 +1,48 @@
 const plans = [
   {
     tag: "Essencial",
-    name: "Duo",
-    price: "199",
-    bottles: "2 garrafas / mês",
-    features: ["Carta mensal do enólogo", "Frete grátis", "Acesso à loja online"],
+    name: "Essencial",
+    price: "149,90",
+    bottles: "4 vinhos selecionados",
+    features: [
+      "Curadoria MM Wine",
+      "Carta com história dos vinhos",
+      "Frete grátis",
+      "Benefícios exclusivos",
+    ],
     featured: false,
+    cta: "Assinar",
   },
   {
     tag: "Mais Popular",
-    name: "Quarteto",
-    price: "369",
-    bottles: "4 garrafas / mês",
+    name: "Seleção",
+    price: "199,90",
+    bottles: "4 vinhos premiados",
     features: [
-      "Nota de degustação individual",
+      "Vinhos mais premiados",
+      "Curadoria avançada",
+      "Carta da Malu",
       "10% de desconto na loja",
       "Frete grátis",
-      "Acesso antecipado a lançamentos",
     ],
     featured: true,
+    cta: "Assinar",
   },
   {
     tag: "Premium",
-    name: "Colecionador",
-    price: "689",
-    bottles: "6 garrafas · seleção rara",
+    name: "Reserva",
+    price: "299,90",
+    bottles: "4 rótulos premium",
     features: [
-      "Consultoria exclusiva",
-      "Vinhos de edição limitada",
+      "Rótulos premium e raros",
+      "Edições especiais",
+      "Acesso prioritário",
       "15% de desconto na loja",
       "Frete expresso grátis",
       "Convite para eventos",
     ],
     featured: false,
+    cta: "Assinar",
   },
 ];
 
@@ -40,38 +50,75 @@ export default function ClubSection() {
   return (
     <section id="clube" className="py-24" style={{ backgroundColor: "#f5ede0" }}>
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-14">
-          <div className="flex items-center justify-center gap-6 mb-6">
-            <div className="h-px w-16" style={{ backgroundColor: "rgba(184,148,90,0.4)" }} />
-            <span className="text-[9px] tracking-[0.35em] uppercase" style={{ color: "#b8945a" }}>
-              Assinatura
-            </span>
-            <div className="h-px w-16" style={{ backgroundColor: "rgba(184,148,90,0.4)" }} />
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
+          <div>
+            <div className="flex items-center gap-4 mb-6">
+              <span
+                className="text-[9px] tracking-[0.4em] uppercase"
+                style={{ color: "#b8945a" }}
+              >
+                Assinatura Mensal
+              </span>
+              <div
+                className="flex-1 h-px"
+                style={{ backgroundColor: "rgba(184,148,90,0.25)" }}
+              />
+            </div>
+            <h2
+              className="text-5xl font-light mb-6"
+              style={{ fontFamily: "var(--font-serif)", color: "#2a1a0e" }}
+            >
+              Clube MM Wine
+            </h2>
+            <p
+              className="text-[15px] leading-relaxed mb-8 max-w-md"
+              style={{ color: "#8a6a48" }}
+            >
+              Receba 4 vinhos selecionados todos os meses. Sem complicação,
+              sem surpresas. Só bons momentos ao redor da mesa.
+            </p>
+            <div className="flex flex-col gap-3">
+              {[
+                "Cancele quando quiser, sem burocracia",
+                "Embalagem premium com proteção térmica",
+                "Carta mensal com história de cada rótulo",
+                "Desconto exclusivo na loja para assinantes",
+              ].map((item) => (
+                <div key={item} className="flex items-center gap-3">
+                  <div
+                    className="w-1 h-1 rounded-full flex-shrink-0"
+                    style={{ backgroundColor: "#b8945a" }}
+                  />
+                  <span className="text-[13px]" style={{ color: "#8a6a48" }}>
+                    {item}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
-          <h2
-            className="text-4xl font-light mb-4"
-            style={{ fontFamily: "var(--font-serif)", color: "#2a1a0e" }}
+
+          <div
+            className="aspect-[4/3] overflow-hidden"
+            style={{ backgroundColor: "#ede3d4" }}
           >
-            Clube MM Wine
-          </h2>
-          <p className="text-[13px] max-w-md mx-auto leading-relaxed" style={{ color: "#8a6a48" }}>
-            Receba vinhos selecionados todo mês com desconto exclusivo,
-            carta do enólogo e embalagem premium.
-          </p>
+            <img
+              src="https://images.unsplash.com/photo-1474722883778-792e7990302f?w=700&q=90"
+              alt="Momentos MM Wine"
+              className="w-full h-full object-cover"
+            />
+          </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {plans.map((plan) => (
             <div
               key={plan.name}
-              className="relative p-8 transition-all"
+              className="relative p-8"
               style={
                 plan.featured
-                  ? { backgroundColor: "white", border: "1.5px solid #b8945a" }
-                  : {
-                      backgroundColor: "white",
-                      border: "0.5px solid rgba(184,148,90,0.2)",
-                    }
+                  ? { backgroundColor: "#2a1a0e", border: "1.5px solid #2a1a0e" }
+                  : { backgroundColor: "white", border: "0.5px solid rgba(184,148,90,0.2)" }
               }
             >
               {plan.featured && (
@@ -85,37 +132,63 @@ export default function ClubSection() {
 
               {!plan.featured && (
                 <div
-                  className="text-[9px] tracking-[0.2em] uppercase mb-3"
+                  className="text-[9px] tracking-[0.25em] uppercase mb-4"
                   style={{ color: "#8a6a48" }}
                 >
                   {plan.tag}
                 </div>
               )}
 
+              {plan.featured && (
+                <div
+                  className="text-[9px] tracking-[0.25em] uppercase mb-4"
+                  style={{ color: "rgba(184,148,90,0.7)" }}
+                >
+                  {plan.tag}
+                </div>
+              )}
+
               <div
-                className="text-2xl font-light mb-1"
-                style={{ fontFamily: "var(--font-serif)", color: "#2a1a0e" }}
+                className="text-2xl font-light mb-2"
+                style={{
+                  fontFamily: "var(--font-serif)",
+                  color: plan.featured ? "#f5ede0" : "#2a1a0e",
+                }}
               >
                 {plan.name}
               </div>
 
-              <div className="flex items-baseline gap-1 my-4">
+              <div className="flex items-baseline gap-1 mb-2">
+                <span
+                  className="text-[11px]"
+                  style={{ color: plan.featured ? "rgba(245,237,224,0.6)" : "#8a6a48" }}
+                >
+                  R$
+                </span>
                 <span
                   className="text-4xl font-light"
-                  style={{ fontFamily: "var(--font-serif)", color: "#2a1a0e" }}
+                  style={{
+                    fontFamily: "var(--font-serif)",
+                    color: plan.featured ? "#f5ede0" : "#2a1a0e",
+                  }}
                 >
-                  R$ {plan.price}
+                  {plan.price}
                 </span>
-                <span className="text-[11px]" style={{ color: "#8a6a48" }}>
+                <span
+                  className="text-[11px]"
+                  style={{ color: plan.featured ? "rgba(245,237,224,0.6)" : "#8a6a48" }}
+                >
                   /mês
                 </span>
               </div>
 
               <div
-                className="text-[10px] tracking-wide mb-6 pb-6"
+                className="text-[10px] tracking-wide mb-6 pb-5"
                 style={{
-                  color: "#b8945a",
-                  borderBottom: "0.5px solid rgba(184,148,90,0.15)",
+                  color: plan.featured ? "#b8945a" : "#b8945a",
+                  borderBottom: plan.featured
+                    ? "0.5px solid rgba(184,148,90,0.2)"
+                    : "0.5px solid rgba(184,148,90,0.2)",
                 }}
               >
                 {plan.bottles}
@@ -123,15 +196,24 @@ export default function ClubSection() {
 
               <ul className="space-y-3 mb-8">
                 {plan.features.map((f) => (
-                  <li key={f} className="flex items-start gap-2 text-[11px]" style={{ color: "#8a6a48" }}>
-                    <span className="mt-0.5 flex-shrink-0" style={{ color: "#b8945a" }}>·</span>
+                  <li
+                    key={f}
+                    className="flex items-start gap-2 text-[12px]"
+                    style={{
+                      color: plan.featured ? "rgba(245,237,224,0.75)" : "#8a6a48",
+                    }}
+                  >
+                    <span
+                      className="mt-1 flex-shrink-0 w-1 h-1 rounded-full"
+                      style={{ backgroundColor: "#b8945a", display: "inline-block" }}
+                    />
                     {f}
                   </li>
                 ))}
               </ul>
 
               <button
-                className="w-full text-[10px] tracking-[0.2em] uppercase py-3.5 transition-all"
+                className="w-full text-[10px] tracking-[0.25em] uppercase py-4 transition-all"
                 style={
                   plan.featured
                     ? { backgroundColor: "#b8945a", color: "white" }
@@ -142,31 +224,8 @@ export default function ClubSection() {
                       }
                 }
               >
-                Assinar agora
+                {plan.cta}
               </button>
-            </div>
-          ))}
-        </div>
-
-        <div
-          className="grid grid-cols-1 md:grid-cols-3 gap-6 p-8"
-          style={{ backgroundColor: "white", border: "0.5px solid rgba(184,148,90,0.15)" }}
-        >
-          {[
-            { icon: "📦", title: "Frete grátis", text: "Embalagem térmica premium para qualquer estado do Brasil" },
-            { icon: "🔄", title: "Cancele quando quiser", text: "Sem fidelidade. Pause, altere ou cancele a qualquer momento" },
-            { icon: "🎁", title: "Presente especial", text: "Assine como presente e enviamos cartão personalizado do enólogo" },
-          ].map(({ icon, title, text }) => (
-            <div key={title} className="flex items-start gap-4">
-              <span className="text-2xl mt-0.5">{icon}</span>
-              <div>
-                <div className="text-[11px] font-medium mb-1" style={{ color: "#2a1a0e" }}>
-                  {title}
-                </div>
-                <div className="text-[11px] leading-relaxed" style={{ color: "#8a6a48" }}>
-                  {text}
-                </div>
-              </div>
             </div>
           ))}
         </div>

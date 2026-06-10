@@ -71,7 +71,7 @@ export default function FeaturedWine() {
                 borderLeft: "2px solid #b8945a",
               }}
             >
-              &ldquo;{wine.sommelierNote}&rdquo;
+              &ldquo;{wine.enologoNote}&rdquo;
               <span
                 className="block mt-2 text-[9px] tracking-widest not-italic uppercase"
                 style={{ color: "#b8945a" }}
