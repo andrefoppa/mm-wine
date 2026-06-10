@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div className="md:col-span-2">
-            <Image src="/logo.jpeg" alt="MM Wine" width={100} height={100} className="mb-4" />
+            <Image src="/Logo 2.png" alt="MM Wine" width={100} height={100} className="mb-4" />
             <p className="text-[12px] leading-relaxed max-w-xs" style={{ color: "#8a6a48" }}>
               Curadoria exclusiva de vinhos selecionados por sommelier certificado.
               Entregamos experiências, não apenas garrafas.

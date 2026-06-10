@@ -24,7 +24,7 @@ export default function Navbar() {
       }}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-        <Image src="/logo.jpeg" alt="MM Wine" width={70} height={70} className="object-contain" />
+        <Image src="/Logo 2.png" alt="MM Wine" width={70} height={70} className="object-contain" />
 
         <div className="hidden md:flex items-center gap-10">
           {[

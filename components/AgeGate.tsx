@@ -28,7 +28,7 @@ export default function AgeGate({ onConfirm }: { onConfirm: () => void }) {
       <div className="flex flex-col items-center text-center px-8 max-w-md w-full">
         <div className="mb-6">
           <Image
-            src="/logo.jpeg"
+            src="/Logo 2.png"
             alt="MM Wine"
             width={200}
             height={200}
