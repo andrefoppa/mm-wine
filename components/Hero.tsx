@@ -67,8 +67,8 @@ export default function Hero() {
                 style={{ backgroundColor: "#ede3d4" }}
               >
                 <img
-                  src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&q=90"
-                  alt="Momento especial com vinho"
+                  src="https://images.unsplash.com/photo-1569919659476-f0852f6834b7?w=800&q=90"
+                  alt="Taça de cristal MM Wine"
                   className="w-full h-full object-cover"
                 />
               </div>
