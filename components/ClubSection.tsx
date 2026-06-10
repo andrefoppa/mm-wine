@@ -4,7 +4,7 @@ const plans = [
     name: "Duo",
     price: "199",
     bottles: "2 garrafas / mês",
-    features: ["Carta mensal do sommelier", "Frete grátis", "Acesso à loja online"],
+    features: ["Carta mensal do enólogo", "Frete grátis", "Acesso à loja online"],
     featured: false,
   },
   {
@@ -24,7 +24,7 @@ const plans = [
     tag: "Premium",
     name: "Colecionador",
     price: "689",
-    bottles: "6 garrafas — seleção rara",
+    bottles: "6 garrafas · seleção rara",
     features: [
       "Consultoria exclusiva",
       "Vinhos de edição limitada",
@@ -56,7 +56,7 @@ export default function ClubSection() {
           </h2>
           <p className="text-[13px] max-w-md mx-auto leading-relaxed" style={{ color: "#8a6a48" }}>
             Receba vinhos selecionados todo mês com desconto exclusivo,
-            carta do sommelier e embalagem premium.
+            carta do enólogo e embalagem premium.
           </p>
         </div>
 
@@ -124,7 +124,7 @@ export default function ClubSection() {
               <ul className="space-y-3 mb-8">
                 {plan.features.map((f) => (
                   <li key={f} className="flex items-start gap-2 text-[11px]" style={{ color: "#8a6a48" }}>
-                    <span className="mt-0.5 flex-shrink-0" style={{ color: "#b8945a" }}>—</span>
+                    <span className="mt-0.5 flex-shrink-0" style={{ color: "#b8945a" }}>·</span>
                     {f}
                   </li>
                 ))}
@@ -155,7 +155,7 @@ export default function ClubSection() {
           {[
             { icon: "📦", title: "Frete grátis", text: "Embalagem térmica premium para qualquer estado do Brasil" },
             { icon: "🔄", title: "Cancele quando quiser", text: "Sem fidelidade. Pause, altere ou cancele a qualquer momento" },
-            { icon: "🎁", title: "Presente especial", text: "Assine como presente — enviamos cartão personalizado do sommelier" },
+            { icon: "🎁", title: "Presente especial", text: "Assine como presente e enviamos cartão personalizado do enólogo" },
           ].map(({ icon, title, text }) => (
             <div key={title} className="flex items-start gap-4">
               <span className="text-2xl mt-0.5">{icon}</span>

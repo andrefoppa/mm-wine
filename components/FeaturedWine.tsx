@@ -76,7 +76,7 @@ export default function FeaturedWine() {
                 className="block mt-2 text-[9px] tracking-widest not-italic uppercase"
                 style={{ color: "#b8945a" }}
               >
-                — Nota do Sommelier
+                Nota do Enólogo
               </span>
             </p>
 

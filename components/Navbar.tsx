@@ -29,7 +29,7 @@ export default function Navbar() {
         <div className="hidden md:flex items-center gap-10">
           {[
             { label: "Coleções", href: "#colecoes" },
-            { label: "Sommelier", href: "#sommelier" },
+            { label: "Enólogo", href: "#enólogo" },
             { label: "Clube", href: "#clube" },
             { label: "Sobre", href: "#sobre" },
           ].map(({ label, href }) => (

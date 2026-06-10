@@ -12,23 +12,21 @@ export default function Hero() {
             </div>
 
             <h1
-              className="text-5xl lg:text-6xl font-light leading-tight mb-6"
+              className="text-5xl lg:text-6xl font-light leading-tight mb-6 italic"
               style={{ fontFamily: "var(--font-serif)", color: "#2a1a0e" }}
             >
               Vinhos que
               <br />
-              <em className="italic" style={{ color: "#b8945a" }}>
-                contam histórias.
-              </em>
+              <span style={{ color: "#b8945a" }}>contam histórias.</span>
             </h1>
 
             <p className="text-[13px] leading-relaxed max-w-md mb-10" style={{ color: "#8a6a48" }}>
-              Cada garrafa selecionada pessoalmente pelo nosso sommelier certificado.
-              Rótulos raros, produtores independentes e safras únicas — entregues
+              Cada garrafa selecionada pessoalmente pelo nosso enólogo certificado.
+              Rótulos raros, produtores independentes e safras únicas, entregues
               na sua porta com elegância.
             </p>
 
-            <div className="flex flex-wrap gap-3 mb-12">
+            <div className="flex flex-row gap-3 mb-12">
               <a
                 href="#colecoes"
                 className="text-[10px] tracking-[0.25em] uppercase px-8 py-4 transition-colors inline-block"
@@ -52,7 +50,7 @@ export default function Hero() {
               {[
                 { num: "+200", label: "Rótulos selecionados" },
                 { num: "12", label: "Países representados" },
-                { num: "100%", label: "Curadoria sommelier" },
+                { num: "100%", label: "Curadoria enólogo" },
               ].map(({ num, label }) => (
                 <div key={label}>
                   <div
@@ -73,8 +71,8 @@ export default function Hero() {
             <div className="relative w-full max-w-sm">
               <div className="aspect-[3/4] overflow-hidden" style={{ backgroundColor: "#ede3d4" }}>
                 <img
-                  src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=700&q=85"
-                  alt="Adega MM Wine"
+                  src="https://images.unsplash.com/photo-1569919659476-f0852f6834b7?w=700&q=90"
+                  alt="Taça de cristal MM Wine"
                   className="w-full h-full object-cover"
                 />
               </div>

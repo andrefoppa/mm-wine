@@ -36,7 +36,7 @@ export const wines: Wine[] = [
     sommelierNote:
       "Um blend extraordinário que equilibra potência e elegância. Taninos sedosos com longa persistência. Vinho de guarda excepcional.",
     image:
-      "https://images.unsplash.com/photo-1474722883778-792e7990302f?w=400&q=80",
+      "https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?w=400&q=90",
     body: 92,
     tannins: 80,
     acidity: 65,
@@ -58,7 +58,7 @@ export const wines: Wine[] = [
     sommelierNote:
       "Ícone da Supertoscana. Complexidade ímpar, estrutura impecável. Um dos grandes vinhos do mundo disponível agora.",
     image:
-      "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=400&q=80",
+      "https://images.unsplash.com/photo-1560148218-1a83060f7b32?w=400&q=90",
     body: 95,
     tannins: 88,
     acidity: 78,
@@ -80,7 +80,7 @@ export const wines: Wine[] = [
     sommelierNote:
       "Chardonnay borgonhês clássico. Cremoso sem ser pesado, com mineralidade que o torna viciante. Harmonia perfeita com frutos do mar.",
     image:
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
+      "https://images.unsplash.com/photo-1584916201218-f4242ceb4809?w=400&q=90",
     body: 70,
     tannins: 15,
     acidity: 85,
@@ -101,7 +101,7 @@ export const wines: Wine[] = [
     sommelierNote:
       "A uva emblema do Chile na sua melhor expressão. Perfil único com pimenta verde característica e final persistente.",
     image:
-      "https://images.unsplash.com/photo-1547595628-c61a29f498af?w=400&q=80",
+      "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=400&q=90",
     body: 82,
     tannins: 72,
     acidity: 70,
@@ -123,7 +123,7 @@ export const wines: Wine[] = [
     sommelierNote:
       "Cava de altíssimo nível que rivaliza com Champagne. Borbulhas finas, autólise pronunciada. Aperitivo ou harmonização surpreendente.",
     image:
-      "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&q=80",
+      "https://images.unsplash.com/photo-1621264448270-9ef00e88a935?w=400&q=90",
     body: 55,
     tannins: 10,
     acidity: 90,
@@ -145,7 +145,7 @@ export const wines: Wine[] = [
     sommelierNote:
       "O rosé mais famoso do mundo não decepcionou em 2023. Cor pálida salmão, boca delicada com frescor irresistível. Verão em cada taça.",
     image:
-      "https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?w=400&q=80",
+      "https://images.unsplash.com/photo-1569919659476-f0852f6834b7?w=400&q=90",
     body: 52,
     tannins: 12,
     acidity: 82,

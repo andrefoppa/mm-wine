@@ -1,6 +1,6 @@
 export default function SommelierSection() {
   return (
-    <section id="sommelier" className="py-24" style={{ backgroundColor: "white" }}>
+    <section id="enólogo" className="py-24" style={{ backgroundColor: "white" }}>
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
@@ -23,14 +23,15 @@ export default function SommelierSection() {
             </h2>
 
             <p className="text-[13px] leading-relaxed mb-6" style={{ color: "#8a6a48" }}>
-              Nossa curadoria é conduzida por sommelier com certificação internacional
+              Nossa curadoria é conduzida por enólogo com certificação internacional
               WSET Level 3. Cada rótulo passa por avaliação de terroir, safra, produtor
               e potencial de harmonização antes de chegar até você.
             </p>
 
             <p className="text-[13px] leading-relaxed mb-10" style={{ color: "#8a6a48" }}>
-              Não vendemos volume — vendemos experiência. O catálogo é pequeno,
-              criterioso e atualizado a cada temporada.
+              Não vendemos produto, vendemos experiência. O catálogo é criterioso,
+              atualizado a cada temporada e pensado para quem entende de vinho
+              ou quer começar a entender.
             </p>
 
             <div className="grid grid-cols-2 gap-4">
@@ -65,8 +66,8 @@ export default function SommelierSection() {
           <div className="space-y-6">
             <div className="aspect-video overflow-hidden" style={{ backgroundColor: "#f5ede0" }}>
               <img
-                src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=700&q=85"
-                alt="Sommelier avaliando vinhos"
+                src="https://images.unsplash.com/photo-1516594798947-e65505dbb29d?w=700&q=90"
+                alt="Adega com garrafas selecionadas"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -82,12 +83,12 @@ export default function SommelierSection() {
                 className="text-lg font-light italic leading-relaxed"
                 style={{ fontFamily: "var(--font-serif)", color: "#2a1a0e" }}
               >
-                &ldquo;Um vinho não é apenas uma bebida — é uma narrativa de solo,
-                clima e dedicação humana. Minha missão é traduzir isso para a
-                sua taça.&rdquo;
+                &ldquo;Um vinho não é apenas uma bebida. É uma narrativa de solo,
+                clima e dedicação humana. Nossa missão é traduzir isso para
+                a sua taça.&rdquo;
               </p>
               <cite className="block mt-3 text-[9px] tracking-[0.2em] not-italic uppercase" style={{ color: "#b8945a" }}>
-                — Sommelier MM Wine · WSET Level 3
+                Enólogo MM Wine · WSET Level 3
               </cite>
             </blockquote>
           </div>
